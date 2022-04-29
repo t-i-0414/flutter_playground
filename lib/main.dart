@@ -1,9 +1,40 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
-void main() => runApp(const MyApp());
+void main() async {
+  //イニシャライズ
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  //パーミションの設定
+  FirebaseMessaging messaging = FirebaseMessaging.instance;
+  NotificationSettings settings = await messaging.requestPermission(
+    alert: true,
+    announcement: false,
+    badge: true,
+    carPlay: false,
+    criticalAlert: false,
+    provisional: false,
+    sound: true,
+  );
+  print('User granted permission: ${settings.authorizationStatus}');
+
+  //トークン取得
+  String token = (await messaging.getToken(
+    vapidKey: "BLE4fsrVKqD8MJ674UkxBYiXwmo6iLKmZmenX904ClM8wuDoTrqDnKZZV6dgmzjrH7PuI1Ychn4tIBSTMlJox3U",
+  ))
+      .toString();
+  print(token);
+
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

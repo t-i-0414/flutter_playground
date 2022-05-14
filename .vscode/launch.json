@@ -19,16 +19,22 @@
       "deviceId": "emulator-5556"
     },
     {
+      "name": "iPhone SE (1st generation)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "A89AA6E8-1F20-43F7-9065-D8CBD54B17DE"
+    },
+    {
       "name": "iPhone 8",
       "request": "launch",
       "type": "dart",
-      "deviceId": "CA3C906E-A7EA-458F-9A70-F0B6B1A73252"
+      "deviceId": "80EF17A6-65FD-4700-B50D-7EEA021AF6AC"
     },
     {
       "name": "iPad Pro (12.9-inch) (5th generation)",
       "request": "launch",
       "type": "dart",
-      "deviceId": "87DB14DE-211B-4D74-9C82-96E1A4445293"
+      "deviceId": "4D2CA95E-D206-4080-A817-ADFCDF4FBB0E"
     },
     {
       "name": "Web(Chrome)",
@@ -55,6 +61,7 @@
       "configurations": [
         "Pixel_4_API_30",
         "Pixel_C_API_30",
+        "iPhone SE (1st generation)",
         "iPhone 8",
         "iPad Pro (12.9-inch) (5th generation)",
         "Web(Chrome)"
@@ -66,11 +73,19 @@
     },
     {
       "name": "All iOS Devices",
-      "configurations": ["iPhone 8", "iPad Pro (12.9-inch) (5th generation)"]
+      "configurations": [
+        "iPhone SE (1st generation)",
+        "iPhone 8",
+        "iPad Pro (12.9-inch) (5th generation)"
+      ]
     },
     {
       "name": "All Mobile Devices",
-      "configurations": ["Pixel_4_API_30", "iPhone 8"]
+      "configurations": [
+        "Pixel_4_API_30",
+        "iPhone SE (1st generation)",
+        "iPhone 8"
+      ]
     },
     {
       "name": "All Tablet Devices",

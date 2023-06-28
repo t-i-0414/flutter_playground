@@ -19,22 +19,22 @@
       "deviceId": "emulator-5556"
     },
     {
-      "name": "iPhone SE (1st generation)",
+      "name": "iPhone SE (3rd generation)",
       "request": "launch",
       "type": "dart",
-      "deviceId": "A89AA6E8-1F20-43F7-9065-D8CBD54B17DE"
+      "deviceId": "805C4704-1402-49AF-A240-209DAC4CEBC8"
     },
     {
-      "name": "iPhone 8",
+      "name": "iPhone 14",
       "request": "launch",
       "type": "dart",
-      "deviceId": "80EF17A6-65FD-4700-B50D-7EEA021AF6AC"
+      "deviceId": "0C3965C6-67AB-4A33-A969-99A587A1FC45"
     },
     {
-      "name": "iPad Pro (12.9-inch) (5th generation)",
+      "name": "iPad Pro (12.9-inch) (6th generation)",
       "request": "launch",
       "type": "dart",
-      "deviceId": "4D2CA95E-D206-4080-A817-ADFCDF4FBB0E"
+      "deviceId": "A306806B-D9F2-432C-8717-3C6F5DE6DFE2"
     },
     {
       "name": "Web(Chrome)",
@@ -61,9 +61,9 @@
       "configurations": [
         "Pixel_4_API_30",
         "Pixel_C_API_30",
-        "iPhone SE (1st generation)",
-        "iPhone 8",
-        "iPad Pro (12.9-inch) (5th generation)",
+        "iPhone SE (3rd generation)",
+        "iPhone 14",
+        "iPad Pro (12.9-inch) (6th generation)",
         "Web(Chrome)"
       ]
     },
@@ -74,24 +74,24 @@
     {
       "name": "All iOS Devices",
       "configurations": [
-        "iPhone SE (1st generation)",
-        "iPhone 8",
-        "iPad Pro (12.9-inch) (5th generation)"
+        "iPhone SE (3rd generation)",
+        "iPhone 14",
+        "iPad Pro (12.9-inch) (6th generation)"
       ]
     },
     {
       "name": "All Mobile Devices",
       "configurations": [
         "Pixel_4_API_30",
-        "iPhone SE (1st generation)",
-        "iPhone 8"
+        "iPhone SE (3rd generation)",
+        "iPhone 14"
       ]
     },
     {
       "name": "All Tablet Devices",
       "configurations": [
         "Pixel_C_API_30",
-        "iPad Pro (12.9-inch) (5th generation)"
+        "iPad Pro (12.9-inch) (6th generation)"
       ]
     },
     {

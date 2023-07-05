@@ -45,3 +45,4 @@ app.*.map.json
 
 # launch.json
 /.vscode/launch.json
+/.vscode/settings.json

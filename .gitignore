@@ -44,3 +44,6 @@ app.*.map.json
 
 # launch.json
 .vscode/launch.json
+
+# FVM Version Cache
+.fvm/

@@ -33,6 +33,17 @@ install-fvm:
 		brew install fvm; \
 	fi
 
+open-xcode:
+	open ios/Runner.xcworkspace
+
+pod-refresh:
+	cd ios && rm -rf Pods && pod install
+
+refresh:
+	@make flutter-clean
+	@make flutter-pub-get
+	@make pod-refresh
+
 setup:
 	@make install-fvm
 	fvm use

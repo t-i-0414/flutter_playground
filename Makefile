@@ -1,3 +1,6 @@
+cp-release-properties-template:
+	cp android/release.properties.template android/release.properties
+
 flutter-clean:
 	fvm flutter clean
 
@@ -32,6 +35,12 @@ install-fvm:
 		echo "Installing fvm ..."; \
 		brew install fvm; \
 	fi
+
+open-deep-link-on-ios-simulator:
+	xcrun simctl openurl booted $(url)
+
+open-deep-link-on-android-emulator:
+	adb shell am start -a android.intent.action.VIEW -d $(url)
 
 open-xcode:
 	open ios/Runner.xcworkspace
